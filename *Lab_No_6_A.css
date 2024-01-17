@@ -1,3 +1,7 @@
+*{
+	box-sizing: border-box;
+}
+
 #div1{
 	background-color: rgb(112,143,153);
 	float: left;
