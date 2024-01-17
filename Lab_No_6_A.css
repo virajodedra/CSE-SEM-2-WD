@@ -1,0 +1,67 @@
+#div1{
+	background-color: rgb(112,143,153);
+	float: left;
+	width: 50%;
+	 padding: 10px;
+}
+#div2{
+	background-color: rgb(138,43,226); 
+	float:left;
+	width: 100%;
+}
+#div3{
+	background-color: rgb(230,197,13);
+	float: left;
+	width: 100%;
+	margin-right: 15px ;
+
+}
+#div4{
+	background-color: black;
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	color: aliceblue;
+}
+#div5{
+	background-color: black;
+	float: right;
+ 	width: 30%;
+	height: 90px;
+	color: aliceblue;
+	margin-left: 8%;
+	margin-bottom: 16px;
+
+
+	
+
+}
+#div6{
+
+	background-color: black;
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	color: aliceblue;
+
+}
+
+#div7{
+
+ background-color: black;
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin-left: 5px;
+	margin-bottom: 15px;
+	color: aliceblue;
+}
+#div8{
+    width: 100%;
+	background-color: blue;
+	color: aliceblue;
+}
