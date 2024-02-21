@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style type="text/css" media="all" >
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
         *{
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            font-family: "Josefin Sans",  sans-serif;
         }
-        body{
-            height: 97vh;
+
+        /* body{
+            height: 100vh;
+            background-color: rgb(23, 216, 216);
+        } */
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            
         }
         .main{
             height: 100%;
             width: 100%;
             background-color:rgb(86 , 83, 83) ;
+
         }
         .header{
             height: 110px;
@@ -47,66 +60,164 @@
             margin-bottom: 50px;
         }
 
+        .footer{
+            display: flex;
+            margin: 0 180px;
+        }
+
+        .card{
+            width: 259px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container{
+            display: grid;
+            margin: 30px 180px;
+            row-gap: 40px;
+            column-gap: 18px;
+            grid-template-columns: min-content min-content min-content min-content;
+            grid-template-rows: repeat(2, auto);
+            
+        }
+
+        .all-event{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        .dis{
+            background-color: white;
+            padding: 8px;
+        }
+
+        button{
+            padding: 12px ;  
+            font-size: 15px;
+            margin: 10px calc(67% - 91.08px);
+            background-color: royalblue;
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
 
     </style>
     
 </head> 
 
 <body>
-    <div class="main">
-        <div class="header">
-            <div class="logo">
-                <img style="height:110px; width:275px; float:left;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/Screenshot%20(3).png?raw=true">
-            </div>
-            <div class="option">
-                <img style="height:26px ; width: 29px;margin-top:15px; margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/twitter.png?raw=true">
-                <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/instagram.png?raw=true">
-                <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/pinterest.png?raw=true">
-                <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/linkedin.png?raw=true">>
-                <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/google.png?raw=true">
-                <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/facebook.png?raw=true">
-                <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/youtube.png?raw=true">
-            </div>
-            <!-- <div class="button" style="float: right;position: relative;top: 33px;margin-right: 35px;">
-               
-            </div> -->
-            <div>
-                    <input type="button" style="float: right;position: relative;top: 30px;margin-right: 35px;height: 40px; width: 170px; color: whitesmoke; background-color: rgb(52, 188, 233); border-radius: 50px;font-size: 1.0em;border: 2px solid grey;" value="DOWNLOAD NOW">
-        </div>
-        <div>
-            <form>
-                <select style="float: inline-end; position: relative;top:30px; margin-right: 20px; height: 50px; width: 190px;background-color: black; color: whitesmoke;  border: 2px solid black;">
-                    <option style="font-size: 1.0em;height: 40px; width: 170px; color: whitesmoke; background-color: black;" value="1" selected>More HTML Templates</option>
-                    <option value="2">CSS-1</option>
-                    <option value="3">CSS-2</option>
-                </select>
-                <select style="float: inline-end; position: relative;top:30px; margin-right: 20px; height: 50px; width: 190px;background-color: black; color: whitesmoke; border: 2px solid black;">
-                    <option style="font-size: 1.0em;height: 40px; width: 170px; color: whitesmoke; background-color: black;" value="1" selected> HTML Templates</option>
-                    <option value="2">HTML-1</option>
-                    <option value="3">HTML-5</option>
-                </select>
-            </form>
-        </div>
-        </div>
-        <div class="container">
-            <div class="Photo">
-                <img style="margin-top: 15px;margin-left: 180px;margin-bottom:30px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/headbar.png?raw=true">
-            </div>
-        </div>
-        <div class="footer">
-            <div>
-                <img style="margin-left: 45px; float: left;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/259%20x%20251.png?raw=true">
+    <div class="conatiner">
+        <div class="main">
+            <div class="header">
+                <div class="logo">
+                    <img style="height:110px; width:275px; float:left;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/Screenshot%20(3).png?raw=true">
+                </div>
+                <div class="option">
+                    <img style="height:26px ; width: 29px;margin-top:15px; margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/twitter.png?raw=true">
+                    <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/instagram.png?raw=true">
+                    <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/pinterest.png?raw=true">
+                    <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/linkedin.png?raw=true">>
+                    <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/google.png?raw=true">
+                    <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/facebook.png?raw=true">
+                    <img style="height:26px ; width: 29px;margin-top:15px;margin-right: 10px;" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/youtube.png?raw=true">
+                </div>
+    
+                <div>
+                        <input type="button" style="float: right;position: relative;top: 30px;margin-right: 35px;height: 40px; width: 170px; color: whitesmoke; background-color: rgb(52, 188, 233); border-radius: 50px;font-size: 1.0em;border: 2px solid grey;" value="DOWNLOAD NOW">
             </div>
             <div>
-                <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/guitar.png?raw=true">
+                <form>
+                    <select style="float: inline-end; position: relative;top:30px; margin-right: 20px; height: 50px; width: 190px;background-color: black; color: whitesmoke;  border: 2px solid black;">
+                        <option style="font-size: 1.0em;height: 40px; width: 170px; color: whitesmoke; background-color: black;" value="1" selected>More HTML Templates</option>
+                        <option value="2">CSS-1</option>
+                        <option value="3">CSS-2</option>
+                    </select>
+                    <select style="float: inline-end; position: relative;top:30px; margin-right: 20px; height: 50px; width: 190px;background-color: black; color: whitesmoke; border: 2px solid black;">
+                        <option style="font-size: 1.0em;height: 40px; width: 170px; color: whitesmoke; background-color: black;" value="1" selected> HTML Templates</option>
+                        <option value="2">HTML-1</option>
+                        <option value="3">HTML-5</option>
+                    </select>
+                </form>
             </div>
-            <div>
-                <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/dj.png?raw=true">
             </div>
-            <div>
-                <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/party.png?raw=true">
+            <div class="container">
+                <div class="all-event">
+                    <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/headbar.png?raw=true" alt="">
+                </div>
+                <div class="card">
+                    <img  src="https://github.com/Pruthviraj36/A2-A-3/blob/main/259%20x%20251.png?raw=true" alt="">
+                    <div class="dis">
+                        <p>10/05/2018</p>
+                        <h2>Night Laser Show</h2>
+                        <p>#hip-hop #mb #dance</p>
+                        <p>we are happy to announce this <br> special laser show</p>
+                        <button>See More...</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/guitar.png?raw=true" alt="">
+                    <div class="dis">
+                        <p>10/05/2018</p>
+                        <h2>Night Laser Show</h2>
+                        <p>#hip-hop #mb #dance</p>
+                        <p>we are happy to announce this <br> special laser show</p>
+                        <button>See More...</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/dj.png?raw=true" alt="">
+                    <div class="dis">
+                        <p>10/05/2018</p>
+                        <h2>Night Laser Show</h2>
+                        <p>#hip-hop #mb #dance</p>
+                        <p>we are happy to announce this <br> special laser show</p>
+                        <button>See More...</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/party.png?raw=true" alt="">
+                    <div class="dis">
+                        <p>10/05/2018</p>
+                        <h2>Night Laser Show</h2>
+                        <p>#hip-hop #mb #dance</p>
+                        <p>we are happy to announce this <br> special laser show</p>
+                        <button>See More...</button>
+                    </div>
+                </div>
+    
+    
+    
+    
+    
+    
+                <!-- <div class="Photo">
+                    <img style="margin-top: 15px;margin-left: 180px;margin-bottom:30px;" src="">
+                </div>
             </div>
-
+            <div class="footer">
+                <div class="card">
+                    <div class="bottomphoto">
+                        <img src="https://github.com/Pruthviraj36/A2-A-3/blob/main/259%20x%20251.png?raw=true">
+                    </div>
+                    <div class="para">
+                            10/05/2018<br>
+                            <p>Nigth Laser</p> 
+        
+                            <h3><br>
+                                we are happy to announce this special laser show<br></h3>
+                    </div>
+                </div> -->
+                <!-- <div>
+                    <img class="bottomphoto2" style=" float: left; margin-top: 10px; "  src="https://github.com/Pruthviraj36/A2-A-3/blob/main/guitar.png?raw=true">
+                </div>
+                <div>
+                    <img class="bottomphoto2" style=" float: left; margin-top: 10px;"  src="https://github.com/Pruthviraj36/A2-A-3/blob/main/dj.png?raw=true">
+                </div>
+                <div>
+                    <img class="bottomphoto2" style=" float: left; margin-top: 10px;"  src="https://github.com/Pruthviraj36/A2-A-3/blob/main/party.png?raw=true">
+                </div> -->
+    
+            </div>
         </div>
     </div>
 </body>
