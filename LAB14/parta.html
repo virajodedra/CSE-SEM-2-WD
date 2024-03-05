@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            font-family:sans-serif ;
+        }
+        .main{
+             width:100%;
+             height:80vh;
+             
+           
+        }
+        .header{
+             width:100%;
+             height:5vh;
+             background-color:rgba(0, 0, 0, 0.737);
+             color:white;
+             text-align:center;
+             font-size:16px;
+             /* font-weight:bold; */
+             
+             
+             float: left;
+        }
+        .option{
+            float: left;
+            margin-right: 25px;
+            margin-top:9px;
+        }
+        .opt{
+            margin-left: 530px;
+        }
+        .content{
+            width: 100%;
+            height: 80vh;
+            background-color: grey;
+        }
+        .heading{
+            
+            margin-left: 590px;
+            font-family: sans-serif;
+            position: relative;
+            top: 20px;
+        }
+        .book{
+            height: 78%;
+            width: 50vh;
+            
+            margin-left: 3%;
+            margin-top: 2%;
+            border: 2px grey solid;
+            border-radius: 15px;
+            background-color: white;
+            border: 2px black solid;
+        }
+        .part1{
+            width: 49.4vh;
+            height: 35%;
+            border-radius: 10px;
+            background-color: rgb(228, 228, 228) ;
+            overflow: hidden;
+
+
+        }
+        .top{
+            background-color: rgba(0, 0, 0, 0.744);
+            color: whitesmoke;
+            margin-left: 8%;
+            width: 12vh;
+            border-radius: 5px;
+        }
+        .mid{
+            float: right;
+            font-size: smaller;
+        }
+        .last{
+            float: right;
+            margin-top: 2vh;
+            font-size: 2.3em;
+            color:cornflowerblue;
+        }
+        .part2{
+            
+            width: 49.4vh;
+            font-size: 3.3em;
+            height: 25%;
+            border-radius: 10px;
+            text-align: right;
+            background-color: rgb(255, 255, 255);
+
+
+        }
+        .part3{
+            display: flex;
+            width: 49.4vh;
+            overflow: hidden;
+            height: 40%;
+            border-radius: 10px;
+            background-color: rgb(246, 220, 61);
+
+        }
+
+        #JS{
+            font-size: 12em;
+            font-weight: 600;
+
+        }
+
+        #Overlap-txt{
+            position: absolute;
+            font-size: 13px;
+            color: rgb(246, 220, 61);
+            transform: rotate(-90deg) translateX(-93px) translateY(19px);
+        }
+
+         .para{
+            float: right;
+            font-size: 1.5em;
+            position: relative;
+            right: 400px;
+            top: -400px;
+            
+         }
+         .para1{
+
+            float: right;
+            font-size: 1.5em;
+            position: relative;
+            right: 400px;
+            top: -350px;
+         }
+         .para2{
+            float: right;
+            font-size: 1.5em;
+            position: relative;
+            right: 310px;
+            top: -300px;
+         }
+        button{
+            border: 2px solid rgba(0, 0, 0, 0.449);
+            height: 40px;
+            width: 240px;
+            font-size:.7em;
+            border-radius: 25px;
+            background-color: rgb(207, 97, 19);
+            color: rgb(255, 255, 255);
+            position: relative;
+            left: 850px;
+            top: -95px;
+            border-radius: 17px;
+
+         }
+         .footer{
+            width: 100%;
+            height: 17vh;
+            background-color: rgba(3, 46, 57, 0.774);
+         }
+         .end{
+            position: relative;
+            top: 10px;
+            font-size: 1.2em;
+            color: whitesmoke;
+            margin-left: 600px;
+
+         }
+         .end1{
+            border: 2px solid rgba(0, 0, 0, 0.449);
+            height: 40px;
+            width: 440px;
+            font-size:.7em;
+            border-radius: 25px;
+            background-color: rgb(207, 97, 19);
+            color: rgb(255, 255, 255);
+            border-radius: 17px;
+            position: relative;
+            top:35px ;
+            left: 600px;
+
+         }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="option opt">The book series</div>
+            <div class="option">Testimonials</div>
+            <div class="option">The Author</div>
+            <div class="option">Free recources</div>
+
+
+        </div>
+        <div class="content">
+            <div class="heading">
+                <h3>YOU  DONT  KNOW  JAVASCRIPT</h3>  
+            </div>
+                
+                <div class="book">
+                    <div class="part1">
+                        <div class="top">
+                            O'REILLY*
+                        </div>
+                        <div class="mid">
+                            "It's OBITO UCHIHA with SARINGAN"
+                            <br>
+                            "It's OBITO UCHIHA with SARINGAN"
+                            <br>
+                            "It's OBITO UCHIHA with SARINGAN"
+                        </div>
+                        <div class="last">
+                            ODEDRA VIRAJ.
+
+                        </div>
+
+                    </div>
+                    <div class="part2">
+
+                        COMPLETE 
+                        <br>
+                        SERIES
+
+                    </div>
+                    <div class="part3">
+
+                        <div id="JS"><p>JS</p></div>
+                        <div id="Overlap-txt"><p>YOU DON'T KNOW</p></div>
+
+                    </div>
+                </div>
+                
+                <div class="para">Don't just drift through Javascript</div>
+                <br><br>
+                <div class="para1">Understand how Javascript works</div>
+                <br><br>
+                <div class="para2"> Start your journey through the bumpy side of javascript</div>
+            </div>
+            
+                 <button>
+                    ORDER   YOUR   COPY   NOW
+                </button> 
+        
+
+        </div>
+        <div class="footer">
+            <div class="end">
+                The first book int the ebook series is absolute  free.
+
+            </div>
+            <button class="end1">
+                
+                FIND  OUT THE MORE ABOUT THE OFFER.
+
+            </button>
+        </div>
+    </div> 
+    
+</body>
+</html>
