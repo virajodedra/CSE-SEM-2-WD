@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+</head>
+
+   <style type="">
+   		*{
+   			box-sizing: border-box;
+   		}
+   		  
+   		  .Content{
+
+   		  	color: white;
+   		  	height: 200px;
+   		  	width: 20%;
+   		  	animation-name: color;
+   		  	background-color: black;
+   		  	animation-duration: 1s;
+   		  	animation-delay: 5ms;
+   		  	position: absolute;
+   		  	animation-iteration-count: infinite;
+   		  	animation-timing-function: linear;
+   		  	animation-direction: alternate;
+   		  	
+   		  }
+
+   		  .Content:hover{
+   		  	background-color: royalblue;
+   		  }
+
+   		  @keyframes color {
+
+   		  	from{
+
+   		  		background-color: black;
+
+   		  	}
+   		  	to{
+   		  		background-color: cyan;
+   		  	}
+       
+            0%{left: 0% ; top:0%;}
+             25%{left: 60% ; top:0%;}
+              50%{left: 60% ; top:60%;}
+               75%{left: 0% ; top:60%;}
+                100%{left: 0% ; top:0%;}
+   		  	
+   		  }
+
+   </style>
+<body style="background-color: yellowgreen;">
+
+	  <div class="Content" >
+
+	  	Content
+	  </div>
+
+</body>
+</html>
