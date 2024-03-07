@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            .ball1{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: blue;
+                border :solid;
+                border-color:pink;
+                animation-name: b1;
+                animation-duration: 5s;
+                position: absolute;
+                animation-iteration-count: infinite;
+                z-index: 5;
+                animation-timing-function: linear;
+            }
+            @keyframes b1 {
+                0%{top: calc(50% - 60px); left: 0%;}
+                25%{top: 50%; left: 95%;}
+                50%{top: 50%; left: 0%;}
+                75%{top: 50%; left: 95%;}
+                100%{top: 50%; left: 50%;}
+            }
+            .ball2{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: white;
+                border :solid;
+                border-color:pink;
+                animation-name: b2;
+                animation-duration: 5s;
+                position: absolute;
+                animation-iteration-count: infinite;
+                z-index: 4;
+                animation-timing-function: linear;
+            }
+            @keyframes b2 {
+                0%{top: calc(50% - 60px); left: 0%;}
+                25%{top: 50%; left: 95%;}
+                50%{top: 2%; left: 50%;}
+                75%{top: 50%; left: 95%;}
+                100%{top: 50%; left: 50%;}
+            }
+            .ball3{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: black;
+                border :solid;
+                border-color:pink;
+                animation-name: b3;
+                animation-duration: 5s;
+                position: absolute;
+                animation-iteration-count: infinite;
+                z-index: 3;
+                animation-timing-function: linear;
+            }
+            @keyframes b3 {
+                0%{top: calc(50% - 60px); left: 0%;}
+                25%{top: 50%; left: 95%;}
+                50%{top: 90%; left: 50%;}
+                75%{top: 50%; left: 95%;}
+                100%{top: 50%; left: 50%;}
+            }
+            .ball4{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: royalblue;
+                border :solid;
+                border-color:pink;
+                animation-name: b4;
+                animation-duration: 5s;
+                position: absolute;
+                animation-iteration-count: infinite;
+                z-index: 2;
+                animation-timing-function: linear;
+            }
+            @keyframes b4 {
+                0%{top: calc(50% - 60px); left: 0%;}
+                25%{top: 50%; left: 95%;}
+                50%{top: 2%; left: 50%;}
+                75%{top: 50%; left: 0%;}
+                100%{top: 50%; left: 50%;}
+            }
+            .ball5{
+                width: 60px;
+                height: 60px;
+                border-radius: 100px;
+                background-color: yellowgreen;
+                border :solid;
+                border-color:pink;
+                animation-name: b5;
+                animation-duration: 5s;
+                position: absolute;
+                animation-iteration-count: infinite;
+                z-index: 1;
+                animation-timing-function: linear;
+            }
+            @keyframes b5 {
+                0%{top: calc(50% - 60px); left: 0%;}
+                25%{top: 50%; left: 95%;}
+                50%{top: 90%; left: 50%;}
+                75%{top: 50%; left: 0%;}
+                100%{top: 50%; left: 50%;}
+            }
+        </style>
+    </head>
+    <body style="background-color: violet;">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+        <div class="ball5"></div>
+    </body>
+</html>
