@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css"> 
+
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            height: 95vh;
+            width:75%;
+            display: flex;
+        }
+        .header{
+            display: flex;
+            height: 95vh;
+            width: 100%;
+            background-image: linear-gradient(345deg,lightpink
+            ,pink,lightblue);
+
+        
+        }
+       
+        .content{
+            margin: 50px;
+            height: 80vh;
+            width: 91%;
+            background-color: white;
+            display: flex;
+        }
+        .img1{
+            height: 100%;
+            width: 45%;
+
+        }
+       
+        
+        .product{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            display: flex;
+            filter: grayscale(100%);
+            
+        }
+        .product:hover{
+         filter: grayscale(0%);
+         animation-delay: 3s;
+         transform: scale(1.1);
+         transition: all 2.4s; 
+        }
+        
+
+
+        .Search1{
+           
+            height: 4%;
+            width: 2%;
+            display: flex;
+            justify-content: left;
+            position: absolute;
+            transition: all 2s;
+            margin-left: -27%;
+            margin-top: 1%;
+            
+            
+
+        }
+        .Search1:hover{
+            
+            transform: scale(1.1);
+        } 
+         
+        
+        .SearchButton{
+            height: 2%;
+            width: 1.5%;
+            display: flex;
+            justify-content: left;
+            position: absolute;
+            margin-left: -27%;
+            margin-top:4%;
+            
+        }
+        .SearchButton:hover{
+            
+            transform: scale(1.1);
+        } 
+        .shopping{
+            height: 3.5%;
+            width: 2%;
+            display: flex;
+            justify-content: left;
+            position: absolute;
+            margin-left: -27%;
+            margin-top:35%;
+
+        }
+        .shopping:hover{
+            
+            transform: scale(1.1);
+        } 
+        .User{
+            height: 3%;
+            width: 2%;
+            display: flex;
+            justify-content: left;
+            position: absolute;
+            margin-top: 32%;
+            margin-left: -27%;
+        }
+        .User:hover{
+            
+            transform: scale(1.1);
+        } 
+
+        .sideInfo{
+            width:9%;
+        }
+        .up{
+            height: 4%;
+            width: 4%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 32%;
+            margin-top: 4%;
+            color: rgb(24, 37, 51);
+            font-size: 22px;
+            
+
+        }
+
+        .Write{
+            width: 15%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 32%;
+            margin-top: 4%;
+            color: rgb(4, 57, 118);
+            font-size: 23px;
+
+        }
+        .bedroom{
+            width: 15%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 27%;
+            margin-top: 5.9%;
+            color:rgb(216, 216, 216) ;
+            font-size: 16px;
+        }
+        
+        .college{
+            width: 20%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 30.5%;
+            margin-top: 7.5%;
+            font-family: sans-serif;
+            color:rgb(0, 0, 0) ;
+            font-size: 23px;
+        }
+        .star{
+            height: 6%;
+            width:5%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 33.5%;
+            margin-top: 9.1%;
+            
+        }
+
+        .review{
+            width: 15%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 29%;
+            margin-top: 10.1%;
+            font-size: 12px;
+        }
+
+        .quality{
+            width: 15%;
+            display: flex;
+            justify-content: right;
+            position: absolute;
+            left: 27%;
+            margin-top: 11.8%;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .basic{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 35%;
+            margin-top: 13.5%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            font-size: 15px;
+        }
+        
+        .premium{
+            height: 4%;
+            width: 9%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 40%;
+            margin-top: 13.5%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            font-size: 15px;
+            background-color: rgb(250, 250, 250);
+
+        }
+         
+         .style{
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 34%;
+            margin-top: 16.1%;
+            font-family: sans-serif;
+            border-radius: 6px;
+            font-size: 15px;
+           
+         }
+         .minimal{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 35%;
+            margin-top: 17.8%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            border-radius: 16px;
+            font-size: 15px;
+            background-color: rgb(250, 250, 250);
+         }
+         .bohemian{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 41%;
+            margin-top: 17.8%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            border-radius: 16px;
+            font-size: 15px;
+         }
+
+         .floral{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 47%;
+            margin-top: 17.8%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            border-radius: 16px;
+            font-size: 15px;
+         }
+         .other{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 53%;
+            margin-top: 17.8%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            border-radius: 16px;
+            font-size: 15px;
+         }
+
+         .color{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 34%;
+            margin-top: 20%;
+            font-family: sans-serif;
+            font-size: 15px;
+         }
+         
+         .green{
+            height: 2.8%;
+            width: 1.4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 36%;
+            margin-top: 21.8%;
+            background-color: rgb(44, 207, 202);
+            border-radius:100%; 
+         }
+
+         .black{
+            height: 2.8%;
+            width: 1.4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 38.8%;
+            margin-top: 21.7%;
+            background-color: rgba(8, 9, 9, 0.799);
+            border-radius:100%;
+
+         }
+          .white{
+            height: 2.8%;
+            width: 1.4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 41.4%;
+            margin-top: 21.7%;
+            background-color:rgb(236, 230, 230);
+            border-radius:100%;
+
+          }
+
+           .whitesmoke{
+
+            height: 2.8%;
+            width: 1.4%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 44.1%;
+            margin-top: 21.7%;
+            background-color: rgb(240, 240, 240);
+            border-radius:100%;
+
+           }
+           .size{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 34%;
+            margin-top: 24%;
+            font-family: sans-serif;
+            font-size: 15px;
+
+           }
+
+           .xxl{
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 36%;
+            margin-top: 26%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            background-color: rgb(250, 250, 250);
+
+            border-radius: 16px;
+            font-size: 15px;
+
+           }
+           .full{
+
+            height: 4%;
+            width: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 42%;
+            margin-top: 26%;
+            font-family: sans-serif;
+            border: solid  1px rgb(198, 198, 198);
+            border-radius: 16px;
+            font-size: 15px;
+
+           }
+
+           .inside{
+            
+            width: 10%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            position: absolute;
+            left: 34%;
+            margin-top: 31%;
+            font-family: sans-serif;
+            padding: 0 18px;
+            border-bottom: 2px rgb(231, 231, 231) solid; 
+
+           }
+
+           .inside:hover{
+            border-bottom: 2px blue solid;
+
+           }
+
+           .reviews{
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 43%;
+            margin-top: 31%;
+            font-family: sans-serif;
+            border-bottom: 2px rgb(231, 231, 231) solid; 
+
+
+           }
+
+           .reviews:hover{
+            border-bottom: 2px blue solid;
+
+           }
+
+           .faq{
+            width: 10%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            position: absolute;
+            left: 48%;
+            margin-top: 31%;
+            font-family: sans-serif;
+            border-bottom: 2px rgb(231, 231, 231) solid;
+            padding: o 18px;
+           }
+
+           .faq:hover{
+
+            border-bottom: 2px blue solid;
+
+
+           }
+
+           .item{
+   
+            width: 10%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            position: absolute;
+            left: 34%;
+            margin-top: 33%;
+            font-family: sans-serif;
+            
+
+           }
+
+           .footer{
+
+           }
+
+           .footer1{
+            width: 6%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            position: absolute;
+            left: 36%;
+            margin-top: 35%;
+            font-family: sans-serif;
+            background-color: rgb(250, 250, 250);
+            color: rgb(8, 9, 9);
+            font-size: 15px;
+            padding: 10px;
+            border-top: 2px rgb(231, 231, 231) solid;
+            border-bottom: 2px rgb(231, 231, 231) solid;
+           }
+
+           .blush{
+            height: 2.8%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 31%;
+            margin-top: 33.8%;
+           
+           }
+
+           .detail{
+            height: 2.8%;
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 31%;
+            margin-top: 35.8%;
+
+           }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+             <div class="content">
+                    <div class="img1">
+                       <img class="product" src="https://github.com/Pruthviraj36/A2-A-3/blob/main/Screenshot%20(6).png?raw=true"> 
+                    </div>
+                    <div >
+                        <img class="Search1" src="https://cdn-icons-png.flaticon.com/128/12127/12127259.png">
+                    </div>
+                    <div>
+                        <img  class="SearchButton" src="https://cdn-icons-png.flaticon.com/128/7079/7079548.png">
+                    </div>
+                    <div>
+                        <img class="shopping"  src="https://cdn-icons-png.flaticon.com/128/13622/13622834.png">
+                    </div>
+                    <div>
+                        <img class="User" src="https://cdn-icons-png.flaticon.com/128/747/747376.png">
+                    </div>
+                 </div>
+                 <div class="sideInfo">
+                     <div class="up">
+
+                        <img src="https://cdn-icons-png.flaticon.com/128/545/545781.png">
+
+                    </div>    
+                    <div class="Write">
+                        <p>  Back to bedroom   </p>
+                    </div>
+                    <div class="bedroom">
+                        <p>B E D R O O M</p>
+                    </div> 
+                    <div class="college">
+                        <h3>College Essentials</h3>
+                    </div> 
+                    <div class="star">
+                        <img src="https://t4.ftcdn.net/jpg/05/32/40/79/360_F_532407942_Fma76SotoFXJFwxBVqkiL0NEExYdNo0t.jpg">
+                    </div>
+                     <div class="review">
+                        4.4(328 reviews)
+                     </div>
+                     <div class="quality">
+                        <h4> Select Quality</h4>
+                     </div>
+                     <div class="basic">
+                        Basic
+                     </div>
+                     <div class="premium">
+                        Premium
+                     </div>
+                     <div class="style">
+                        <h4>Style</h4>
+                     </div>
+                     <div class="minimal">
+                        Minimal
+                     </div>
+                     <div class="bohemian">
+                        Bohemian
+                     </div>
+                     <div class="floral">
+                        Floral
+                     </div>
+                     <div class="other">
+                        Other
+                     </div>
+                     <div class="color">
+                        <h4>Color</h4>
+                     </div>
+                     <div class="green">
+
+                     </div>
+                     <div class="black">
+
+                     </div>
+                     <div class="white">
+                        
+                     </div>
+                     <div class="whitesmoke">
+
+                     </div>
+                     <div class="size">
+                        <h4>Size</h4>
+                     </div>
+                     <div class="xxl">
+                        Twin XL
+                     </div>
+                     <div class="full">
+                        Full
+                     </div>
+                     <div class="inside">
+                        What's Inside
+                     </div>
+                     <div class="reviews">
+                        Review
+                     </div>
+                     <div class="faq">
+                        FAQs
+                     </div>
+                     <div class="item">
+                        <h5>Costmizable item</h5>
+                     </div>
+                     <div class="footer">
+                        <img class="footer1" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtcxk57x6lKpOGjcLnIb8UTf_15mhyhhpL6YAJ8BaA0K2H1URR">
+
+                     </div>
+                     <div class="blush">
+                        <h5> Blush Plush Comfoter </h5>
+                     </div>
+
+                     <div class="detail">
+                        See the product detail
+                     </div>
+                     
+                     
+    
+                 </div>
+            
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
