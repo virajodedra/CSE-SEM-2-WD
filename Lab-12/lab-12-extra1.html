@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Extra</title>
+	<style type="text/css">
+		.wrapper{
+			height: 10vh;
+			width: 100%;
+			background-color:rebeccapurple;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+		}
+		.box{
+			height: 10%;
+			width: 10%;
+			background-color: yellow;
+			position: absolute;
+		}
+		#box1{
+			top: 0%;
+			left: 20%;
+		}
+		#box2{
+			top: 90%;
+			left: 20%;
+		}
+		.sphere{
+			height: 10vh;
+			width: 5.5%;
+			background-color: chocolate;
+			border: 1px solid black;
+			position: absolute;
+			border-radius: 100%;
+			z-index: 3;
+		}
+		#sphere1{
+			top: 0%;
+			left: 22%;
+		}
+		#sphere1:hover{
+			animation-name: fall1;
+			animation-duration: 5s;
+			animation-timing-function: linear;
+			position: absolute;
+		}
+		#sphere1:active{
+			background-color: pink;
+			animation-name: shrink,fall1;
+			animation-duration: 5s;
+			border-radius: 0%;
+			animation-timing-function: linear;
+		}
+		@keyframes fall1{
+			0%{
+				top: 0%;
+				left: 22%;
+			}
+			100%{
+				top: calc(100% - 10vh);
+				left: 22%;
+			}
+		}
+		@keyframes shrink{
+			0%{
+				width: 5.5%;
+			}
+			100%{
+				width: 2%;
+			}
+		}
+		.obstac1{
+			height: 30vh;
+			width: 5%;
+			position: absolute;
+			background-color: black;
+			top: 50%;
+			left: 17%;
+		}
+		.obstac2{
+			height: 30vh;
+			width: 5%;
+			position: absolute;
+			background-color: black;
+			top: 50%;
+			left: 26.25%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box" id="box1"></div>
+	<div class="sphere" id="sphere1"></div>
+	<div class="obstac1"></div>
+	<div class="obstac2"></div>
+	<div class="box" id="box2"></div>
+</body>
+</html>

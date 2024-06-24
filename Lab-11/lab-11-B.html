@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab-11-B</title>
+	<style type="text/css">
+		.wrapper{
+			width: 60%;
+			height: 100vh;
+			background-color: darkblue;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+		}
+		.spacer{
+			width: 20%;
+			height: 100vh;
+			float: left;
+		}
+		.row{
+			height: 14%;
+			width: 83%;
+/*			background-color: red;*/
+/*			border: 1px solid white;*/
+			margin: 12px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.column{
+			height: 100%;
+			width: 31%;
+			background-color: black;
+			border-radius: 10px;
+		}
+		#box1{background-image: linear-gradient(45deg,lightgreen,lightblue)}
+		#box2{background-image: linear-gradient(to top right,teal,cyan)}
+		#box3{background-image: linear-gradient(to bottom right,yellow,teal)}
+		#box4{background-image: linear-gradient(to bottom right,lightpink,red)}
+		#box5{background-image: linear-gradient(to bottom right,cyan,pink)}
+		#box6{background-image: linear-gradient(to top right,yellow,red,pink)}
+		#box7{background-image: linear-gradient(to bottom right,pink,navy)}
+		#box8{background-image: linear-gradient(to bottom right,yellow 40%,white)}
+		#box9{background-image: linear-gradient(white,red)}
+		#box10{background-image: linear-gradient(to bottom right,purple 40%,white)}
+		#box11{background-image: linear-gradient(to bottom right,violet,yellow)}
+		#box12{background-image: linear-gradient(to bottom right,beige,navy)}
+		#box13{background-image: linear-gradient(to bottom right,teal,white)}
+		#box14{background-image: linear-gradient(to bottom right,red,violet,purple)}
+		#box15{background-image: linear-gradient(to bottom right,teal,blue)}
+	</style>
+</head>
+<body>
+	<div class="spacer"></div>
+	<div class="wrapper">
+		<div class="row">
+			<div class="column" id="box1"></div>
+			<div class="column" id="box2"></div>
+			<div class="column" id="box3"></div>
+		</div>
+		<div class="row">
+			<div class="column" id="box4"></div>
+			<div class="column" id="box5"></div>
+			<div class="column" id="box6"></div>
+		</div>
+		<div class="row">
+			<div class="column" id="box7"></div>
+			<div class="column" id="box8"></div>
+			<div class="column" id="box9"></div>
+		</div>
+		<div class="row">
+			<div class="column" id="box10"></div>
+			<div class="column" id="box11"></div>
+			<div class="column" id="box12"></div>
+		</div>
+		<div class="row">
+			<div class="column" id="box13"></div>
+			<div class="column" id="box14"></div>
+			<div class="column" id="box15"></div>
+		</div>
+	</div>
+	<div class="spacer"></div>
+</body>
+</html>

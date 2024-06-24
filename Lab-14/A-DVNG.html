@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Strike|Bebas+Neue|Dosis|Anton|Source+Code+Pro|Questrial|Poppins|Fjalla+One">
+    <title>One</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 97vh;
+        }
+
+        .whole{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .header{
+            height: 10%;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: black;
+            position: relative;
+            color: white;
+        }
+        .middle{
+            height: 69%;
+            /* border: 1px solid black; */
+            background-color: rgba(235, 235, 235, 0.95);
+            position: relative;
+            /* background-color: rgba(10, 9, 9, 0); */
+        }
+        .footer{
+            height: 21%;
+            background-color: black;
+            /* border: 1px solid black; */
+            padding-top: 40px;
+            
+        }
+
+        .linkedl{
+            height: 25%;
+            
+            /* vertically center*/
+            /* 
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: auto;  
+            margin-bottom: auto; 
+            */
+            /*-----------------*/
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .linkers{
+            margin-left: 35px;
+            float: left;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        .upper{
+            height: 20%;
+            width: 100%;
+
+            font-size: 35px;
+            font-family: "Protest Strike";
+            text-align: center;
+
+            padding: 19px;
+
+            /* border: 1px solid orange; */
+        }
+        .lower{
+            height: 80%;
+            width: 100%;
+            /* border: 1px solid blue; */
+        }
+
+        .cardview{
+            height: 100%;
+            width: 30%;
+            float: left;
+            /* border: 1px solid red; */
+            padding-left: 30px;
+            padding-bottom: 10px;
+        }
+        .textview{
+            height: 100%;
+            width: 70%;
+            float: left;
+            /* border: 1px solid red; */
+        }
+
+        .carder{
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .one{
+            height: 25%;
+            /* border: 1px solid black; */
+        }
+        .two{
+            height: 28%;
+            /* border: 1px solid black; */
+            padding: 6px;
+            font-family: "Source Code Pro";
+            font-weight: bolder;
+            font-size: 40px;
+            background-color: white;
+            text-align: right;
+        }
+        .three{
+            height: 47%;
+            /* border: 1px solid black; */
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: yellow;
+            padding-right: 30px;
+            font-family: "Questrial";
+            font-weight: 800;
+            text-align: right;
+            font-size: 200px;
+        }
+        .oneleft{
+            width: 30%;
+            height: 100%;
+            float: left;
+            /* border: 1px solid black; */
+        }
+        .twoleft{
+            width: 70%;
+            height: 100%;
+            float: left;
+            /* border: 1px solid black; */
+            padding: 10px 10px 10px 24px;
+        }
+        .onelefttext{
+            height: 20%;
+            width: 58%;
+            margin-left: 40px;
+            background-color: black;
+            color: white;
+        }
+        .twoleftone{
+            height: 70%;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+        .twolefttwo{
+            height: 30%;
+            width: 100%;
+            /* border: 1px solid black; */
+            text-align: right;
+            font-family: "Bebas Neue";
+            letter-spacing: 2px;
+            font-weight: bolder;
+        }
+        .twoleftonea{
+            text-align: right;
+            font-size: 10px;
+            font-family: "Dosis";
+        }
+        .twoleftoneb{
+            text-align: right;
+            font-size: 12px;
+            font-weight: bold;
+            /* font-family: "Anton"; */
+        }
+
+        .midtextview{
+            height: 58%;
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 65px;
+            font-family: "Poppins";
+            /* border: 1px solid red; */
+        }
+        .midtextview1{
+            /* translate: 50% ; */
+            padding-left: auto;
+            padding-right: auto;
+        }
+        .midtextview1 input[type="button"]{
+            /* height: 30px; */
+            font-family: "Fjalla One";
+            padding: 7px 45px 7px 45px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            /* font-weight: 700; */
+            font-size: 17px;
+
+            margin:0 auto;
+            display:block;
+        }
+
+        .footerone{
+            /* border: 1px solid red; */
+            font-family: "Poppins";
+            font-size: x-large;
+            text-align: center;
+            color: white;
+            font-weight: 500;
+        }
+        .footerone input[type="button"]{
+            /* height: 30px; */
+            font-family: "Fjalla One";
+            padding: 7px 75px 7px 75px;
+            background-color: orangered;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            /* font-weight: 700; */
+            font-size: 17px;
+            margin-top: 17px;
+            
+        }
+
+        input[type="button"]:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="whole">
+        <div class="header">
+            <div class="linkedl">
+                <div class="linkers"><a href="#">The book series</a></div>
+                <div class="linkers"><a href="#">Testimonials</a></div>
+                <div class="linkers"><a href="#">The Author</a></div>
+                <div class="linkers"><a href="#">Free resourses</a></div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="upper">You don't know JavaScript</div>
+            <div class="lower">
+                <div class="cardview">
+                    <div class="carder">
+                        <div class="one">
+                            <div class="oneleft">
+                                <div class="onelefttext">O'RELLY</div>
+                            </div>
+                            <div class="twoleft">
+                                <div class="twoleftone">
+                                    <div class="twoleftonea">
+                                        "When you strive to comprehend your code, you create better work and become better at what you do. The code isn't just your job anymore, it's your craft. This is why I love up & going"
+                                    </div>
+                                    <div class="twoleftoneb">
+                                        -JENN LUKAS, Frontend consultant
+                                    </div>
+                                </div>
+                                <div class="twolefttwo">
+                                    KYLE SIMPSON
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two">
+                            COMPLETE<br/>SERIES
+                        </div>
+                        <div class="three">
+                            JS
+                        </div>
+                    </div>
+                </div>
+                <div class="textview">
+                    <div class="midtextview">
+                        Don't just drift through Javascript<br/>
+                        Understand how JavaScript works<br/>
+                        Start your journey through the bumpy side of Javascript
+                    </div>
+                    <div class="midtextview1">
+                        <input type="button" value="ORDER YOUR COPY NOW" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerone">
+                The first ebook in the book series is absolutely free
+                <br/>
+                <input type="button" value="Find OUT MORE ABOUT THIS OFFER" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
