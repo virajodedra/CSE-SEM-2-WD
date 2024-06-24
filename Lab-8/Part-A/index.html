@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+        }
+        .logo{
+            width: 10%;
+        }
+        .logo img{
+            width: 100%;
+        }
+        .nav-bar{
+            width: 90%;
+        }
+        .nav-bar ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: end;
+            gap: 1rem;
+            margin: 0;
+        }
+        .nav-bar ul li a{
+            text-decoration: none;
+        }
+        .programer-section{
+            position: relative;
+        }
+        .programer-section img{
+            width: 100%;
+            height: 60vh;
+        }
+        .programer-section div{
+            position: absolute;
+            top: 16px;
+            right: 0;
+            width: 40%;
+        }
+        .programs-items{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 6px 0;
+        }
+        .programs-items div{
+            width: 20%;
+            border: 2px solid red;
+            text-align: center;
+            height: 25vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/DU_Logo.svg">
+        </div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">My Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="programer-section">
+        <img src="./images/programmer.jpg">
+        <div>
+            <h1>Hello, I am Web Developer</h1>
+            <p>I use HTML and CSS to Convert webpage designs into beatiful and efficient websites.</p>
+        </div>
+    </div>
+    <div class="programs-items">
+        <div>Program 1</div>
+        <div>Program 2</div>  
+        <div>Program 3</div>
+        <div>Program 4</div>
+    </div>
+</body>
+</html>

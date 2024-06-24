@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form 4</title>
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+			margin: 0px;
+			padding: 0px;
+		}
+		form
+		{
+			border: 30px solid teal;
+			width: 100%;
+		}
+		table
+		{
+			text-align: center;
+			width: 100%;
+		}
+		th
+		{
+			height: 60px;
+			background: lightgray;
+			font-size: 1.3rem;
+		}
+		td
+		{
+			text-align: left;
+			padding: 20px;
+		}
+		button
+		{
+			width: 80px;
+			padding: 10px;
+			font-weight: 600;
+		}
+		input
+		{
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<th colspan="2">Create Account</th>
+			<tr>
+				<td>First Name* <br> <input type="text" placeholder="enter first name"></td>
+				<td>Last Name <br> <input type="text" placeholder="enter last name"></td>
+			</tr>
+			<tr>
+				<td colspan="2">Email* <br> <input type="email" placeholder="enter email"></td>
+			</tr>
+			<tr>
+				<td>Password* <br> <input type="password" placeholder="enter password"></td>
+				<td>Confirm Password* <br> <input type="password" placeholder="enter Confirm password"></td>
+			</tr>
+			<tr>
+				<td>Gender : <br> <input type="radio" name="gender"> Male <input type="radio" name="gender"> Female</td>
+				<td>Hobbies : <br> <input type="checkbox"> Music <input type="checkbox"> Sports <input type="checkbox"> Travel <input type="checkbox"> Movies</td>
+			</tr>
+			<tr>
+				<td>Source of Income <br>
+					<select>
+						<option>xyz</option>
+						<option>abc</option>
+					</select></td>
+				<td>Income <br><input type="range"> <button type="button">20k</button></td>
+			</tr>
+			<tr>
+				<td>Upload Profile Picture <br>
+					<input type="file" name="" placeholder="No file chosen"></td>
+					<td>Age <br> <input type="text" name="" value="18"></td>
+			</tr>
+			<tr>
+				<td colspan="2">Bio <br> <textarea></textarea></td>
+			</tr>
+			<tr style="background: lightgray">
+				<td colspan="2" style="text-align: right">
+					<button type="submit">Create</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

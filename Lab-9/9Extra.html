@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animation</title>
+	<style type="text/css">
+		#outer{
+			height: 100vh;
+			width:101%;
+			background-color: purple;
+		}
+		#sphere1,#sphere2,#sphere3,#sphere4,#sphere5{
+			height: 8%;
+			width: 4.2%;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			animation-duration: 10s;
+			animation-iteration-count: 1;
+			border-radius: 100px;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-fill-mode: forwards;
+		}
+        #sphere1{
+            animation-name: sphere1anime;
+            z-index: 5;
+            background-color: violet;
+        }
+        #sphere2{
+            animation-name: sphere2anime;
+            z-index: 4;
+            background-color: rgb(246, 55, 87);
+        }
+        #sphere3{
+            animation-name: sphere3anime;
+            z-index: 3;
+            background-color: white;
+        }
+        #sphere4{
+            animation-name: sphere4anime;
+            z-index: 2;
+            background-color: white;
+        }
+        #sphere5{
+            animation-name: sphere5anime;
+            z-index: 1;
+            background-color: rgb(246, 55, 87);
+        }
+		@keyframes sphere1anime {
+			0%{
+				top:50%;
+				left: 0%;
+			}
+			25%{
+				top:50%;
+				left: 96.5%;
+			}
+			50%{
+				top:50%;
+				left: 0%;
+			}
+			75%{
+				top:50%;
+				left: 96%;
+			}
+            100%{
+                top:50%;
+				left: 50%;
+            }
+		} 
+        @keyframes sphere2anime {
+			0%{
+				top:50%;
+				left: 0%;
+			}
+			25%{
+				top:50%;
+				left: 96.5%;
+			}
+			50%{
+				top:0%;
+				left: 50%;
+			}
+			75%{
+				top:50%;
+				left: 0%;
+			}
+            100%{
+                top:50%;
+				left: 50%;
+            }
+		} 
+        @keyframes sphere3anime {
+			0%{
+				top:50%;
+				left: 0%;
+			}
+			25%{
+				top:50%;
+				left: 96.5%;
+			}
+			50%{
+				top:92%;
+				left: 50%;
+			}
+			75%{
+				top:50%;
+				left: 0%;
+			}
+            100%{
+                top:50%;
+				left: 50%;
+            }
+		} 
+        @keyframes sphere4anime {
+			0%{
+				top:50%;
+				left: 0%;
+			}
+			25%{
+				top:50%;
+				left: 96.5%;
+			}
+			50%{
+				top:0%;
+				left: 50%;
+			}
+			75%{
+				top:50%;
+				left: 96%;
+			}
+            100%{
+                top:50%;
+				left: 50%;
+            }
+		} 
+        @keyframes sphere5anime {
+			0%{
+				top:50%;
+				left: 0%;
+			}
+			25%{
+				top:50%;
+				left: 96.5%;
+			}
+			50%{
+				top:92%;
+				left: 50%;
+			}
+			75%{
+				top:50%;
+				left: 96%;
+			}
+            100%{
+                top:50%;
+				left: 50%;
+            }
+		} 
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="sphere1"></div>
+        <div id="sphere2"></div>
+        <div id="sphere3"></div>
+        <div id="sphere4"></div>
+        <div id="sphere5"></div>
+	</div>
+</body>
+</html>

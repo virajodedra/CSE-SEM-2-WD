@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two</title>
+    <style>
+        body{
+            height: 97vh;
+            background-color: blue;
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background-color: red;
+            animation-name: xyz;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes xyz {
+            0% {left: 0px; top: 0px;}
+            33% {left:  calc(100% - 200px);top: 0;}
+            50% {left:  calc(100% - 200px);top: 500px;}
+            75% {left: 10px; top: 500px;}
+            100% {left: 0; top: 0;}
+        }
+    </style>
+</head>
+<body>
+        <div class="one">
+            Content
+        </div>
+</body>
+</html>
+
+<!-- Moving div from Left to right, right to bottom, bottom to left and left to top. -->

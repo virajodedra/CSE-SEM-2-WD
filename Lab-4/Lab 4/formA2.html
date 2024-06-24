@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-4 (Part-A) Form-2</title>
+    <style>
+        form{
+            border: 2px solid black;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 0 5rem;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table align="center" cellSpacing="5" cellPadding="10">
+            <caption><h2>COVID-19 Vaccine Registration Form</h2></caption>
+            <tr>
+                <td>First Name</td>
+                <td></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Aadhar Number</td>
+                <td></td>
+                <td><input type="text" pattern="[0-9]{12}"></td>
+            </tr>
+            <tr>
+                <td>Vaccine Name</td>
+                <td></td>
+                <td>
+                    <select>
+                        <option value="--select">Please Select Vaccine Name</option>
+                        <option value="Covishield">Covishield</option>
+                        <option value="Covaxin">Covaxin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Vaccine Name</td>
+                <td></td>
+                <td>
+                    <select>
+                        <option value="--select">Please Select Vaccination Center Name</option>
+                        <option value="Hudko Chokdi">Hudko Chokdi</option>
+                        <option value="Sahakar Road">Sahakar Road</option>
+                        <option value="Sheth-High School">Sheth-High School</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Dose</td>
+                <td></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Dose Number</td>
+                <td></td>
+                <td><input type="number" min="1" max="2"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">
+                    <button type="submit">CLICK HERE</button>&nbsp;
+                    <button type="reset">CANCEL</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
